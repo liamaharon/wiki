@@ -74,7 +74,7 @@ Executes the given call and returns a number of possible traces for it.
 0. `Object` - Call options, same as `eth_call`.
     - `from`:   `Address` - (optional) 20 Bytes - The address the transaction is send from.
     - `to`:   `Address` - (optional when creating new contract) 20 Bytes - The address the transaction is directed to.
-    - `gas`:   `Quantity` - (optional) Hex string of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
+    - `gas`:   `Quantity` - (optional) Integer formatted as a hex string of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
     - `gasPrice`:   `Quantity` - (optional) Hex string of the gas price used for each paid gas.
     - `value`:   `Quantity` - (optional) Hex string of the value sent with this transaction.
     - `data`:   `Data` - (optional) 4 byte hash of the method signature followed by encoded parameters. For details see [Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI).
@@ -620,4 +620,3 @@ Response
   ]
 }
 ```
-
